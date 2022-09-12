@@ -1,3 +1,4 @@
+from Curso import Curso
 class Persona:
     
     pais = "Chile" #atributo de toda la clase
@@ -11,6 +12,7 @@ class Persona:
         self.edad = edad
         self.lineas_codigo = 0
         Persona.lista_personas.append(self)
+        self.curso = Curso("Bootcamp Python")
 
     #métodos para instancais en especifico
     def cumpleaños(self): #está a la misma altura de init

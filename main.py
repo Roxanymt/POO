@@ -34,3 +34,8 @@ bonnie.cumpleaños()
 bonnie.tomar_cerveza()
 
 pablo.codificar(120)
+
+bonnie.curso.agrega_calificacion(9) #al curso de elena se le agrega calificación
+bonnie.curso.agrega_calificacion(7)
+
+print(bonnie.curso.calificaciones)
