@@ -32,3 +32,5 @@ Persona.imprime_lista()
 bonnie.cumpleaños()
 
 bonnie.tomar_cerveza()
+
+pablo.codificar(120)

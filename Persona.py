@@ -24,6 +24,9 @@ class Persona:
         #self.lineas_codigo += cantidad_lineas
         self.lineas_codigo += abc
         Persona.total_lineas_codigo += abc
+        if Persona.experto(self.lineas_codigo):
+            print("Eres toda una experta codifcando",self.nombre,"!!!!")
+
 
     #método genral que aplica a TODAS la instancia de la clase
     @classmethod #indica que el sig método corresponde a toda la clase 
@@ -36,6 +39,13 @@ class Persona:
     @staticmethod
     def mayoria_edad(edad):
         if edad >= 18:
+            return True
+        else:
+            return False
+
+    @staticmethod
+    def experto(lineas): #recibo un numero
+        if lineas > 100: #si num es mayor a 100 es experto
             return True
         else:
             return False
