@@ -5,14 +5,14 @@ class Persona:
     lista_personas= [] #lista de todas las instancias 
     total_lineas_codigo = 0 #total de lineas de codigo de todos
 
-    def __init__(self, nombre, apellido, email, edad): #a través de init se inicializa la instancia. SELF incluye toda la información del objeto.
+    def __init__(self, nombre, apellido, email, edad, nombre_curso): #a través de init se inicializa la instancia. SELF incluye toda la información del objeto.
         self.nombre = nombre
         self.apellido = apellido
         self.email = email
         self.edad = edad
         self.lineas_codigo = 0
         Persona.lista_personas.append(self)
-        self.curso = Curso("Bootcamp Python")
+        self.curso = Curso(nombre_curso)
 
     #métodos para instancais en especifico
     def cumpleaños(self): #está a la misma altura de init
@@ -57,5 +57,9 @@ class Persona:
             print("Aquí esta tu cerveza",self.nombre)
         else:
             print("Lo siento",self.nombre,", no puedes beber")
+
+    def que_haces(self):
+        #raise NotImplementedError #cuando a la persona le preguntan que haces, dirá "nada"
+        print("Nada! :)")
 
 

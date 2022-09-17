@@ -5,4 +5,4 @@ class Curso:
         self.calificaciones = []
 
     def agrega_calificacion(self, calificacion):
-        self.calificacion.append(calificacion)
+        self.calificaciones.append(calificacion)
